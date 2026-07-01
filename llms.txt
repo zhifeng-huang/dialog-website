@@ -1,0 +1,31 @@
+# DiaLog
+
+> DiaLog is a privacy-first iOS dialysis record app for CAPD, CCPD, and in-center hemodialysis. It is a personal record-keeping tool, not medical advice, not a medical device, and not an emergency service.
+
+## Key Pages
+
+- [DiaLog support home](https://zhifeng-huang.github.io/dialog-website/)
+- [Feature overview](https://zhifeng-huang.github.io/dialog-website/features.html)
+- [Privacy Policy](https://zhifeng-huang.github.io/dialog-website/privacy.html)
+- [User Agreement](https://zhifeng-huang.github.io/dialog-website/terms.html)
+- [Download DiaLog on the App Store](https://apps.apple.com/us/app/dialog-dialysis-tracker/id6782161409)
+
+## What DiaLog Does
+
+- Supports CAPD, CCPD, and in-center hemodialysis record workflows.
+- Stores personal health information locally on the user's device.
+- Does not require an account.
+- Does not use ads, third-party analytics, or tracking.
+- Does not upload treatment records to a DiaLog server.
+- Does not use iCloud or CloudKit health-data sync.
+- Can protect access with Face ID, Touch ID, or device passcode.
+- Can create user-controlled encrypted backup files and local PDF reports.
+- Can schedule optional local treatment and medication reminders.
+
+## Support
+
+For support questions, email infinity.tech.support@gmail.com.
+
+## Safety Note
+
+DiaLog does not diagnose, treat, monitor, mitigate, or prevent any disease or medical condition. Users should follow their care team's instructions and seek medical help immediately in an emergency.
