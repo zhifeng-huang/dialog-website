@@ -507,37 +507,42 @@ h3 {
 
 .support-panel {
   display: grid;
-  grid-template-columns: 1fr minmax(280px, 420px);
-  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 460px);
+  gap: 28px;
   align-items: center;
 }
 
 .support-actions {
   display: grid;
-  grid-template-columns: 190px 1fr;
-  gap: 18px;
+  grid-template-columns: minmax(0, 148px) minmax(0, 1fr);
+  gap: 20px;
   align-items: center;
 }
 
 .qr-download {
   display: grid;
   justify-items: center;
-  gap: 10px;
+  gap: 8px;
+  width: 148px;
+  padding: 10px;
+  border: 1px solid rgba(107, 163, 165, 0.28);
+  border-radius: 8px;
+  background: rgba(7, 30, 31, 0.42);
   color: var(--text);
   text-align: center;
   text-decoration: none;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   font-weight: 850;
   line-height: 1.25;
 }
 
 .qr-download img {
-  width: 190px;
-  height: 190px;
-  padding: 10px;
-  border-radius: 8px;
+  width: 128px;
+  height: 128px;
+  padding: 8px;
+  border-radius: 6px;
   background: white;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
 
 .doc-links {
@@ -667,6 +672,16 @@ h3 {
 
   .qr-download {
     justify-self: start;
+    width: min(100%, 320px);
+    grid-template-columns: 96px minmax(0, 1fr);
+    justify-items: start;
+    align-items: center;
+    text-align: left;
+  }
+
+  .qr-download img {
+    width: 96px;
+    height: 96px;
   }
 
   .trust-badges {
