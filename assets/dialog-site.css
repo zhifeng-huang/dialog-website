@@ -520,11 +520,14 @@ h3 {
 }
 
 .qr-download {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 8px;
   width: 148px;
+  max-width: 148px;
   padding: 10px;
+  overflow: hidden;
   border: 1px solid rgba(107, 163, 165, 0.28);
   border-radius: 8px;
   background: rgba(7, 30, 31, 0.42);
@@ -537,11 +540,17 @@ h3 {
 }
 
 .qr-download img {
-  width: 128px;
-  height: 128px;
+  flex: 0 0 auto;
+  width: 128px !important;
+  min-width: 128px;
+  max-width: 128px;
+  height: 128px !important;
+  min-height: 128px;
+  max-height: 128px;
   padding: 8px;
   border-radius: 6px;
   background: white;
+  object-fit: contain;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
 }
 
@@ -672,16 +681,19 @@ h3 {
 
   .qr-download {
     justify-self: start;
+    flex-direction: row;
     width: min(100%, 320px);
-    grid-template-columns: 96px minmax(0, 1fr);
-    justify-items: start;
-    align-items: center;
+    max-width: 320px;
     text-align: left;
   }
 
   .qr-download img {
-    width: 96px;
-    height: 96px;
+    width: 96px !important;
+    min-width: 96px;
+    max-width: 96px;
+    height: 96px !important;
+    min-height: 96px;
+    max-height: 96px;
   }
 
   .trust-badges {
