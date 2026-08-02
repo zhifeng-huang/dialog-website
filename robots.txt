@@ -14,9 +14,9 @@ User-agent: Claude-User
 Allow: /
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
 
 Sitemap: https://zhifeng-huang.github.io/dialog-website/sitemap.xml
