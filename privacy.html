@@ -28,7 +28,7 @@
         "url": "https://zhifeng-huang.github.io/dialog-website/privacy.html",
         "name": "DiaLog Privacy Policy",
         "description": "DiaLog Privacy Policy for local-only dialysis records, reminders, PDF reports, encrypted backups, and user-controlled sharing.",
-        "dateModified": "2026-06-20",
+        "dateModified": "2026-09-30",
         "inLanguage": "en-US",
         "isPartOf": {
           "@type": "WebSite",
@@ -90,7 +90,7 @@
         <a class="doc-back" href="index.html">Back to DiaLog home</a>
         <p class="section-kicker">Legal</p>
         <h1 class="doc-title">DiaLog Privacy Policy</h1>
-        <p class="doc-meta">Effective date: June 20, 2026 Last updated: June 20, 2026 Version: 2026-06-20</p>
+        <p class="doc-meta">Effective date: September 30, 2026 Last updated: September 30, 2026 Version: 2026-09-30</p>
       </section>
 
       <section class="doc-shell">
@@ -109,6 +109,7 @@
             <li>Treatment records for CAPD, CCPD, or hemodialysis.</li>
             <li>Vascular access details, such as access type, location, and your target ("dry") weight.</li>
             <li>Health measurements such as weight, blood pressure, pulse, glucose, fluid intake, urine output, and ultrafiltration.</li>
+            <li>Optional fluid tracking settings, a care-team-provided daily allowance, and individual fluid entries with amounts, times, categories, and notes.</li>
             <li>Medications, including dose, amount, timing, and schedule.</li>
             <li>Intraperitoneal (IP) insulin and blood glucose, if you use the diabetes-related fields.</li>
             <li>Symptoms, wellbeing information, access-site or exit-site observations, and notes.</li>
@@ -120,22 +121,25 @@
           <h2>3. How Your Information Is Stored</h2>
           <p>DiaLog stores your information locally on your device. DiaLog does not upload your records to our servers and does not use iCloud or CloudKit synchronization.</p>
           <p>DiaLog keeps its live database and locally stored treatment photos in the App's private storage and excludes that live data from automatic device backups. As a result, restoring an iPhone or iPad from an Apple device backup may not restore your DiaLog records. Use DiaLog's encrypted backup export if you want a separate copy that you can restore later.</p>
+          <p>For fluid widgets, DiaLog keeps a small derived snapshot in local storage shared only by the app and its widget extension. The snapshot identifies the active treatment module and tracking day, and includes recorded intake and an optional allowance only when you enable numerical widget display. It contains no itemized entry history, names, photos, or medication records. This cache is excluded from automatic device backups and is not included in encrypted backup exports; DiaLog regenerates it from your local records.</p>
           <p>DiaLog does not require an account.</p>
 
           <h2>4. Biometric and Passcode Lock</h2>
           <p>DiaLog can use Apple's device authentication system to protect access to your records. Depending on your device and settings, authentication may use Face ID, Touch ID, or your device passcode.</p>
           <p>Biometric information is handled by Apple and your device. DiaLog does not receive, store, or transmit your Face ID or Touch ID data.</p>
 
-          <h2>5. Notifications</h2>
+          <h2>5. Notifications and Widgets</h2>
           <p>If you enable reminders, DiaLog schedules notifications locally on your device. You can manage notification permissions in your device settings.</p>
           <p>DiaLog does not send your treatment information to us when scheduling notifications. Please be aware that notification content may be visible on your lock screen depending on your iOS settings.</p>
+          <p>You choose whether to add a fluid widget to your Home Screen or Lock Screen. Numerical fluid values are hidden by default. If you enable <code>Show amounts in widgets</code>, other people may see those values on your screen, including when the app itself is locked. DiaLog's app lock does not independently hide widget values. The widget also respects privacy redaction requested by iOS. You can turn numerical display off in Profile or remove the widget at any time.</p>
+          <p>Widget actions open DiaLog and follow your configured app-lock preference. A quick-entry link only prepares an amount; you must review and save it in the app before a fluid entry is recorded.</p>
 
           <h2>6. Photos</h2>
           <p>Where available, you may choose to attach a photo from your photo library to an exit-site record. DiaLog stores the selected image locally with your records.</p>
           <p>DiaLog does not upload your photos to us. The copy stored by DiaLog is excluded from automatic device backups along with the rest of the live DiaLog data. The original image in your photo library, if any, is managed separately by Apple Photos and your device settings.</p>
 
           <h2>7. Encrypted Backup Export and Import</h2>
-          <p>DiaLog allows you to create an encrypted backup file that you may save outside the app, including to iCloud Drive or another storage location you choose. A backup may include the app data needed to restore DiaLog, such as your profile, treatment type, settings, treatment records, supply records, reminder preferences, legal agreement status, and any exit-site photos stored by the app.</p>
+          <p>DiaLog allows you to create an encrypted backup file that you may save outside the app, including to iCloud Drive or another storage location you choose. A backup may include the app data needed to restore DiaLog, such as your profile, treatment type, settings, treatment records, supply records, reminder preferences, fluid tracking settings and entries, legal agreement status, and any exit-site photos stored by the app.</p>
           <p>Backups are created only when you request them and are encrypted on your device using AES-256-GCM, with the encryption key derived from the backup password you provide using PBKDF2. The Developer does not set, receive, or hold this password. DiaLog can import a backup when you choose to restore one, but importing a backup replaces the current data in the app with the data from that backup.</p>
           <p>If you forget the password, DiaLog cannot decrypt or restore that backup. Once you save a backup outside DiaLog, the selected app, service, or storage location may handle that encrypted file according to its own privacy practices.</p>
           <p>Creating or importing a backup does not enable iCloud or CloudKit synchronization. DiaLog does not automatically sync personal health information to iCloud.</p>
